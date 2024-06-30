@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Person/Color Detection</title>
+</head>
+<body>
+    <h1>Upload Video for Human/Color Detection</h1>
+    <form action="/detect" method="post" enctype="multipart/form-data">
+        <label for="file">Select video file:</label>
+        <input type="file" id="file" name="file" accept=".mp4" required><br><br>
+
+        <fieldset>
+            <legend>Select colors of clothes to detect:</legend>
+            <input type="radio" id="red" name="color" value="red" checked>
+            <label for="red">Red</label><br>
+
+            <input type="radio" id="black" name="color" value="black">
+            <label for="black">Black</label><br>
+
+            <input type="radio" id="blue" name="color" value="blue" >
+            <label for="blue">Blue</label><br>
+
+            <input type="radio" id="yellow" name="color" value="yellow">
+            <label for="yellow">Yellow</label><br>
+
+            <input type="radio" id="white" name="color" value="white">
+            <label for="white">White</label><br>
+
+            <input type="radio" id="cyan" name="color" value="cyan" >
+            <label for="cyan">Cyan</label><br>
+
+            <input type="radio" id="purple" name="color" value="purple">
+            <label for="purple">Purple</label><br>
+
+            <input type="radio" id="green" name="color" value="green">
+            <label for="green">Green</label><br>
+
+
+            <legend>Select processing device:</legend>
+            <input type="radio" id="gpu" name="use_gpu" value="1" checked>
+            <label for="gpu">GPU</label><br>
+
+            <input type="radio" id="cpu" name="use_gpu" value="0">
+            <label for="cpu">CPU</label><br>
+        </fieldset><br>
+
+        <input type="submit" value="Detect Objects">
+    </form>
+</body>
+</html>

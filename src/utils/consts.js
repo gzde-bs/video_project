@@ -31,7 +31,7 @@ export const flipCardData = [
   },
   {
     label: "Anyone looking to learn better",
-    text: "Anyone who wants to learn better can use SummaWiev to convert video content into written content that is easier to digest and understand.",
+    text: "Anyone who wants to learn better can use SummaWiev to convert video content into shorter videos that is easier to digest and understand.",
     image: anyoneLookingToLearnBetter,
      
   },

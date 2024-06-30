@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Detection</title>
+</head>
+<body>
+    <h1>Upload Video for Object Detection</h1>
+    <form action="/detect" method="post" enctype="multipart/form-data">
+        <label for="file">Select video file:</label>
+        <input type="file" id="file" name="file" accept=".mp4" required><br><br>
+
+        <fieldset>
+            <legend>Select object classes to detect:</legend>
+            <input type="checkbox" id="person" name="object_class" value="0">
+            <label for="person">Person</label><br>
+
+            <input type="checkbox" id="car" name="object_class" value="2">
+            <label for="car">Car</label><br>
+
+            <input type="checkbox" id="traffic_light" name="object_class" value="9">
+            <label for="traffic_light">Traffic Light</label><br>
+
+            <input type="checkbox" id="truck" name="object_class" value="7">
+            <label for="truck">Traffic Light</label><br>
+
+            <input type="checkbox" id="bicycle" name="object_class" value="1">
+            <label for="bicycle">Bicycle</label><br>
+
+            <input type="checkbox" id="motorbike" name="object_class" value="3">
+    <label for="motorbike">Motorbike</label><br>
+
+    <input type="checkbox" id="bus" name="object_class" value="5">
+    <label for="bus">Bus</label><br>
+
+    <input type="checkbox" id="train" name="object_class" value="6">
+    <label for="train">Train</label><br>
+
+    <input type="checkbox" id="fire_hydrant" name="object_class" value="10">
+    <label for="fire_hydrant">Fire Hydrant</label><br>
+
+    <input type="checkbox" id="stop_sign" name="object_class" value="11">
+    <label for="stop_sign">Stop Sign</label><br>
+
+    <input type="checkbox" id="bird" name="object_class" value="14">
+    <label for="bird">Bird</label><br>
+
+    <input type="checkbox" id="cat" name="object_class" value="15">
+    <label for="cat">Cat</label><br>
+
+    <input type="checkbox" id="dog" name="object_class" value="16">
+    <label for="dog">Dog</label><br>
+
+    <input type="checkbox" id="horse" name="object_class" value="17">
+    <label for="horse">Horse</label><br>
+
+    <input type="checkbox" id="sheep" name="object_class" value="18">
+    <label for="sheep">Sheep</label><br>
+
+    <input type="checkbox" id="cow" name="object_class" value="19">
+    <label for="cow">Cow</label><br>
+
+    <input type="checkbox" id="elephant" name="object_class" value="20">
+    <label for="elephant">Elephant</label><br>
+
+    <input type="checkbox" id="bear" name="object_class" value="21">
+    <label for="bear">Bear</label><br>
+
+    <input type="checkbox" id="zebra" name="object_class" value="22">
+    <label for="zebra">Zebra</label><br>
+
+    <input type="checkbox" id="giraffe" name="object_class" value="23">
+    <label for="giraffe">Giraffe</label><br>
+
+    <input type="checkbox" id="umbrella" name="object_class" value="25">
+    <label for="umbrella">Umbrella</label><br>
+
+    <input type="checkbox" id="suitcase" name="object_class" value="28">
+    <label for="suitcase">Suitcase</label><br>
+
+    <input type="checkbox" id="snowboard" name="object_class" value="31">
+    <label for="snowboard">Snowboard</label><br>
+
+    <input type="checkbox" id="sports_ball" name="object_class" value="32">
+    <label for="sports_ball">Sports Ball</label><br>
+
+    <input type="checkbox" id="kite" name="object_class" value="33">
+    <label for="kite">Kite</label><br>
+
+    <input type="checkbox" id="baseball_bat" name="object_class" value="34">
+    <label for="baseball_bat">Baseball Bat</label><br>
+
+    <input type="checkbox" id="skateboard" name="object_class" value="36">
+    <label for="skateboard">Skateboard</label><br>
+
+    <input type="checkbox" id="bottle" name="object_class" value="39">
+    <label for="bottle">Bottle</label><br>
+
+    <input type="checkbox" id="cup" name="object_class" value="41">
+    <label for="cup">Cup</label><br>
+
+    <input type="checkbox" id="banana" name="object_class" value="46">
+    <label for="banana">Banana</label><br>
+
+    <input type="checkbox" id="apple" name="object_class" value="47">
+    <label for="apple">Apple</label><br>
+
+    <input type="checkbox" id="laptop" name="object_class" value="63">
+    <label for="laptop">Laptop</label><br>
+
+    <input type="checkbox" id="cell_phone" name="object_class" value="67">
+    <label for="cell_phone">Cell Phone</label><br>
+
+    <input type="checkbox" id="book" name="object_class" value="73">
+    <label for="book">Book</label><br>
+
+            <legend>Select processing device:</legend>
+            <input type="radio" id="gpu" name="use_gpu" value="1" checked>
+            <label for="gpu">GPU</label><br>
+
+            <input type="radio" id="cpu" name="use_gpu" value="0">
+            <label for="cpu">CPU</label><br>
+        </fieldset><br>
+
+        <input type="submit" value="Detect Objects">
+    </form>
+</body>
+</html>
